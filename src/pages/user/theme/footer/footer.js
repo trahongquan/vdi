@@ -1,8 +1,4 @@
 import { memo } from 'react';
-import { FaInstagram } from "react-icons/fa";
-import { MdOutlineMailOutline } from "react-icons/md";
-import { SiFacebook, SiZalo } from "react-icons/si";
-import { Link } from "react-router-dom";
 import "./style.scss";
 
 export const Footer = () => {
@@ -12,11 +8,11 @@ export const Footer = () => {
                 <div className='container'>
                     <div className='row'>
                         <div className='col col-12 col-md-6'>
-                            <p>
+                            <p className='text-start'>
                                 <img alt="" src="https://vietnamdefence.vdi.org.vn/QuanTriENG/KND/HoTro/PublishingImages/HoTro/NoiDung/2024/04/940_exclude.png" />
                             </p>
                             <br/>
-                            <p className='text-uppercase'>
+                            <p className='text-start text-uppercase'>
                                 ban thư ký triển lãm 2024
                             </p>
                             <ul>
@@ -24,7 +20,20 @@ export const Footer = () => {
                                 <li><span >Hotline : 0983609790</span></li>
                             </ul>
                         </div>
+                        <div className='col col-12 col-md-6'>
+                            <div className='bg-white d-flex flex-column justify-content-center p-3'>
+                                    <span className='text-uppercase text-danger fs-3 fw-bold'>đăng ký nhận bản tin</span>
+                                    <p className='fs-6 fst-italic text-muted'> để cập nhật thông tin mới nhất</p>
+                                    <input type="text" className='form-control fs-6 fst-italic text-muted my-2' placeholder='Họ và Tên'/>
+                                    <input type="text" className='form-control fs-6 fst-italic text-muted my-2' placeholder='Địa chỉ Email'/>
+                                    <input type="text" className='form-control fs-6 fst-italic text-muted my-2' placeholder='Lĩnh vực; Chuyên ngành'/>
+                            </div>
+                        </div>
                     </div>
+                </div>
+                <div className='copyright'>
+                    <img src="https://vietnamdefence.vdi.org.vn/Publishing_Resources/BoQuocPhong/assets/images/Line7mau.png" alt="" />
+                    <p>Copyright © Vietnam Defence Expo. All rights reserved</p>
                 </div>
                 
             </footer>

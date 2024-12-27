@@ -3,7 +3,7 @@ import LogoutButton from 'components/logoutButton';
 import { memo, useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
 import { FaInstagram } from "react-icons/fa";
-import { IoPersonOutline, IoHome } from "react-icons/io5";
+import { IoHome, IoPersonOutline } from "react-icons/io5";
 import { SiFacebook } from "react-icons/si";
 import { Link, useNavigate } from "react-router-dom";
 // import Divider from '@mui/material/Divider';
@@ -18,29 +18,29 @@ export const Header = () => {
     useEffect(() => {
         const accessToken = localStorage.getItem('accessToken');
         if (accessToken) {
-          axios.get(`http://localhost:3333/auth/profile`, {
-            headers: {
-              Authorization: `Bearer ${accessToken}`
-            }
-          })
-          .then(response => {
+            axios.get(`http://localhost:3333/auth/profile`, {
+                headers: {
+                Authorization: `Bearer ${accessToken}`
+                }
+            })
+            .then(response => {
             setIsLoggedIn(true);
             toast.success('Đăng nhập thành công!')
             console.log("Chạy lần 1");
             
-          })
-          .catch(error => {
+            })
+            .catch(error => {
             setIsLoggedIn(false);
             console.error('Error:', error);
-          });
+            });
         } else {
             setIsLoggedIn(false)
         }
-      }, []);
+        }, []);
 
     return(
         <header className='row' >
-            <div className='d-none d-md-block'>
+            <div className='d-none d-md-block container'>
                 <div class="logo">
                     <a href="#">
                         <img src="https://vietnamdefence.vdi.org.vn/Publishing_Resources/BoQuocPhong/assets/images/VN_defence_logo1.png" alt=""/>

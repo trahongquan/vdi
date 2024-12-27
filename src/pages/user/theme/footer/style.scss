@@ -57,3 +57,34 @@ a{
 a:hover{
     color: rgb(21, 40, 211);
 }
+
+// .container {
+//     max-width: 1080px;
+// }
+
+.form-control {
+    border: none;
+    border-bottom: 1px solid black; /* Màu và độ dày của đường kẻ bên trong ô input */
+}
+.copyright {
+    position: relative;
+    border-top: 2px solid #fff;
+    background: #01303A;
+    font-size: 17px;
+    line-height: 26px;
+    font-style: italic;
+    margin-top: 75px;
+}
+.copyright p {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 3%;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 26px;
+}
