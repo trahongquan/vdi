@@ -46,14 +46,14 @@ export const HomePage = () => {
                 </div>
                 <div className="carousel-item">
                 <img
-                    src="https://vietnamdefence.vdi.org.vn/quantri/knd/tintucvn/PublishingImages/TinTuc/AnhDaiDien/2024/12/805_day4.png"
+                    src="https://vietnamdefence.vdi.org.vn/quantri/knd/tintucvn/PublishingImages/TinTuc/AnhDaiDien/2024/12/day2.png"
                     className="d-block w-100"
                     alt="..."
                 />
                 </div>
                 <div className="carousel-item">
                 <img
-                    src="https://vietnamdefence.vdi.org.vn/quantri/knd/tintucvn/PublishingImages/TinTuc/AnhDaiDien/2024/12/805_day4.png"
+                    src="https://vietnamdefence.vdi.org.vn/quantri/knd/tintucvn/PublishingImages/TinTuc/AnhDaiDien/2024/12/day3.png"
                     className="d-block w-100"
                     alt="..."
                 />
