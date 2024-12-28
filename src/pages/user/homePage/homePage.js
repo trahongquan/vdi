@@ -38,25 +38,31 @@ export const HomePage = () => {
             </div>
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                <img
-                    src="https://vietnamdefence.vdi.org.vn/quantri/knd/tintucvn/PublishingImages/TinTuc/AnhDaiDien/2024/12/805_day4.png"
-                    className="d-block w-100"
-                    alt="..."
-                />
+                <a href="https://vietnamdefence.vdi.org.vn/QuanTri/KND/TinTucVn/Lists/TinTuc/Attachments/88/Final%20Day%204%20for%20Printing.pdf">
+                    <img
+                        src="https://vietnamdefence.vdi.org.vn/quantri/knd/tintucvn/PublishingImages/TinTuc/AnhDaiDien/2024/12/805_day4.png"
+                        className="d-block w-100 "
+                        alt="..."
+                    />
+                </a>
                 </div>
                 <div className="carousel-item">
-                <img
-                    src="https://vietnamdefence.vdi.org.vn/quantri/knd/tintucvn/PublishingImages/TinTuc/AnhDaiDien/2024/12/day2.png"
-                    className="d-block w-100"
-                    alt="..."
-                />
+                <a href="https://vietnamdefence.vdi.org.vn/QuanTri/KND/TinTucVn/Lists/TinTuc/Attachments/86/Final%20Day%202.pdf">
+                    <img
+                        src="https://vietnamdefence.vdi.org.vn/quantri/knd/tintucvn/PublishingImages/TinTuc/AnhDaiDien/2024/12/day2.png"
+                        className="d-block w-100"
+                        alt="..."
+                    />
+                </a>
                 </div>
                 <div className="carousel-item">
-                <img
-                    src="https://vietnamdefence.vdi.org.vn/quantri/knd/tintucvn/PublishingImages/TinTuc/AnhDaiDien/2024/12/day3.png"
-                    className="d-block w-100"
-                    alt="..."
-                />
+                <a href="https://vietnamdefence.vdi.org.vn/QuanTri/KND/TinTucVn/Lists/TinTuc/Attachments/87/Final%20chuan%20Day%203%20Ban%20IN.pdf">
+                    <img
+                        src="https://vietnamdefence.vdi.org.vn/quantri/knd/tintucvn/PublishingImages/TinTuc/AnhDaiDien/2024/12/day3.png"
+                        className="d-block w-100"
+                        alt="..."
+                    />
+                </a>
                 </div>
             </div>
             <button
@@ -65,7 +71,7 @@ export const HomePage = () => {
                 data-bs-target="#carouselExampleIndicators"
                 data-bs-slide="prev"
             >
-                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span className="carousel-control-prev-icon bg-danger" aria-hidden="true"></span>
                 <span className="visually-hidden">Previous</span>
             </button>
             <button
@@ -74,7 +80,7 @@ export const HomePage = () => {
                 data-bs-target="#carouselExampleIndicators"
                 data-bs-slide="next"
             >
-                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <span className="carousel-control-next-icon bg-danger" aria-hidden="true"></span>
                 <span className="visually-hidden">Next</span>
             </button>
             </div>

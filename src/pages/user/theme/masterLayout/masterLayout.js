@@ -1,3 +1,4 @@
+import { Divider } from 'antd';
 import { memo } from 'react';
 import { Toaster } from 'react-hot-toast';
 import Footer from '../footer/footer';
@@ -7,6 +8,7 @@ export const MasterLayout = ({ children, ...props }) => {
     return (
         <div className='overflow-auto overflow-hidden' {...props}>
             <Header />
+            <Divider style={{margin: 'unset', borderColor: 'red', borderWidth: '0.25rem'}} />
             <Toaster
                 position="bottom-right"
                 reverseOrder={false}

@@ -11,6 +11,9 @@ import { Link, useNavigate } from "react-router-dom";
 import './style.scss';
 
 export const Header = () => {
+    const [isHovered, setIsHovered] = useState(false);
+
+
     // const [toValue, setToValue] = useState("/login")
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const navigate = useNavigate();
@@ -42,7 +45,7 @@ export const Header = () => {
         <header className='row' >
             <div className='d-none d-md-block container'>
                 <div class="logo">
-                    <a href="#">
+                    <a href="/">
                         <img src="https://vietnamdefence.vdi.org.vn/Publishing_Resources/BoQuocPhong/assets/images/VN_defence_logo1.png" alt=""/>
                     </a>
                 </div>
@@ -91,10 +94,22 @@ export const Header = () => {
                                     <span className="nav-link p-0" aria-current="page"><IoHome style={{ fontSize: '1.5rem' }}  /></span>
                                 </Link>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
                                 <Link to={"/"} >
                                     <span className="nav-link" aria-current="page">VỀ TRIỂN LÃM</span>
                                 </Link>
+                                {isHovered && (
+                                    <div className="hovered-menu">
+                                        <ul>
+                                            <li>Giới Thiệu</li>
+                                            <li>Danh sách đơn vị trưng bày</li>
+                                            <li>Danh sách đoàn khách Quốc tế</li>
+                                            <li>Ban tổ chức</li>
+                                            <li>Thời gian và địa điểm</li>
+                                            <li>Sơ đồ triển lãm</li>
+                                        </ul>
+                                    </div>
+                                )}
                             </li>
                             <li className="nav-item">
                                 <Link to={"/"} >
