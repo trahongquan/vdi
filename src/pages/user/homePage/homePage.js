@@ -5,87 +5,97 @@ import "./style.scss";
 export const HomePage = () => {
     const navigate = useNavigate();
     return (
-        <div className="container" style={{width: '400px'}}>
-            <div>
-                <h2 className="text-center m-2 text-uppercase fw-bold text-success">tin hàng ngày</h2>
-            </div>
-            <div
-            id="carouselExampleIndicators"
-            className="carousel slide m-2"
-            data-bs-ride="carousel"
-            >
-            <div className="carousel-indicators">
-                <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="0"
-                className="active"
-                aria-current="true"
-                aria-label="Slide 1"
-                ></button>
-                <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-                ></button>
-                <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-                ></button>
-            </div>
-            <div className="carousel-inner">
-                <div className="carousel-item active">
-                <a href="https://vietnamdefence.vdi.org.vn/QuanTri/KND/TinTucVn/Lists/TinTuc/Attachments/88/Final%20Day%204%20for%20Printing.pdf">
-                    <img
-                        src="https://vietnamdefence.vdi.org.vn/quantri/knd/tintucvn/PublishingImages/TinTuc/AnhDaiDien/2024/12/805_day4.png"
-                        className="d-block w-100 "
-                        alt="..."
-                    />
-                </a>
+        <>
+            <banner>
+                <div className="" style={{width: '100%'}}>
+                    <div id="carouselExampleIndicators" className="carousel slide">
+                        <div className="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div className="carousel-inner">
+                            <div className="carousel-item active">
+                            <img src="https://vietnamdefence.vdi.org.vn/quantri/knd/tintucvn/PublishingImages/TinTuc/AnhDaiDien/2024/05/slide-wesite_vn_08052024.jpg" className="d-block w-100" alt="..."/>
+                            </div>
+                            <div className="carousel-item">
+                            <img src="https://vietnamdefence.vdi.org.vn/quantri/knd/tintucvn/PublishingImages/TinTuc/AnhDaiDien/2024/05/slide-wesite_vn_08052024%20(1).jpg" className="d-block w-100" alt="..."/>
+                            </div>
+                            <div className="carousel-item">
+                            <img src="https://vietnamdefence.vdi.org.vn/quantri/knd/tintucvn/PublishingImages/TinTuc/AnhDaiDien/2024/05/banner%202024_home%205%201.png" className="d-block w-100" alt="..."/>
+                            </div>
+                        </div>
+                        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span className="visually-hidden">Previous</span>
+                        </button>
+                        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span className="visually-hidden">Next</span>
+                        </button>
+                        </div>
                 </div>
-                <div className="carousel-item">
-                <a href="https://vietnamdefence.vdi.org.vn/QuanTri/KND/TinTucVn/Lists/TinTuc/Attachments/86/Final%20Day%202.pdf">
-                    <img
-                        src="https://vietnamdefence.vdi.org.vn/quantri/knd/tintucvn/PublishingImages/TinTuc/AnhDaiDien/2024/12/day2.png"
-                        className="d-block w-100"
-                        alt="..."
-                    />
-                </a>
+            </banner>
+            <unit className="container">
+                <div className="section_head text-center">
+                    <img src="https://vietnamdefence.vdi.org.vn/quantri/knd/quangcao/PublishingImages/DanhMucQuangCao/AnhDaiDien/2024/04/groupvietnamdefence.png" alt=""></img>
                 </div>
-                <div className="carousel-item">
-                <a href="https://vietnamdefence.vdi.org.vn/QuanTri/KND/TinTucVn/Lists/TinTuc/Attachments/87/Final%20chuan%20Day%203%20Ban%20IN.pdf">
-                    <img
-                        src="https://vietnamdefence.vdi.org.vn/quantri/knd/tintucvn/PublishingImages/TinTuc/AnhDaiDien/2024/12/day3.png"
-                        className="d-block w-100"
-                        alt="..."
-                    />
-                </a>
+                <div className="offices_list row">
+                    <div className="item col d-flex flex-column align-items-center">
+                        <h3>Cơ quan chủ trì</h3>
+                        <div className="col col-4 dvtc ">
+                            <img src="https://vietnamdefence.vdi.org.vn/quantri/knd/quangcao/PublishingImages/QuangCao/AnhDaiDien/2024/05/1.jpg" className="img-fluid" alt=""/>
+                            <span className="quangcao_title">Bộ quốc phòng</span>
+                        </div>
+                    </div>
+                    <div className="item col">
+                        <h3>Đơn vị tổ chức</h3>
+                        <div className="col col-12">
+                            <div className="row">
+                                <div className="col col-3 dvtc">
+                                        <img className="dvtc_img" src="https://vietnamdefence.vdi.org.vn/quantri/knd/quangcao/PublishingImages/QuangCao/AnhDaiDien/2024/05/untitled.png" className="img-fluid" alt=""/>
+                                    <span className="quangcao_title">Bộ Tổng tham mưu</span>
+                                </div>
+                                <div className="col col-3 dvtc">
+                                        <img src="https://vietnamdefence.vdi.org.vn/quantri/knd/quangcao/PublishingImages/QuangCao/AnhDaiDien/2024/04/vdi%20logo.png" className="img-fluid" alt=""/>
+                                    <span className="quangcao_title">Tổng cục Công nghiệp Quốc phòng</span>
+                                </div>
+                                <div className="col col-3 dvtc">
+                                        <img src="https://vietnamdefence.vdi.org.vn/quantri/knd/quangcao/PublishingImages/QuangCao/AnhDaiDien/2024/05/2.jpg" className="img-fluid" alt=""/>
+                                    <span className="quangcao_title">Cục đối ngoại</span>
+                                </div>
+                                <div className="col col-3 dvtc">
+                                        <img src="https://vietnamdefence.vdi.org.vn/quantri/knd/quangcao/PublishingImages/QuangCao/AnhDaiDien/2024/05/z5429731844708_adc17348419e7e5c827a60ff9d5eb1f7.jpg" className="img-fluid" alt=""/>
+                                    <span className="quangcao_title">Cục tuyên huấn</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="item col">
+                        <h3>Đơn vị thực hiện</h3>
+                        <div className="col col-12">
+                            <div className="row">
+                                <div className="col col-4 dvtc">
+                                    <img src="https://vietnamdefence.vdi.org.vn/quantri/knd/quangcao/PublishingImages/QuangCao/AnhDaiDien/2024/04/2024/05/logogaet-final.jpg" className="img-fluid" alt=""/>
+                                    <span className="quangcao_title">Tổng công ty kinh tế kỹ thuật công nghiệp quốc phòng</span>
+                                </div>
+                                <div className="col col-4 dvtc">
+                                    <img src="https://vietnamdefence.vdi.org.vn/quantri/knd/quangcao/PublishingImages/QuangCao/AnhDaiDien/2024/05/3.jpg" className="img-fluid" alt=""/>
+                                    <span className="quangcao_title">Tổng công ty Xuất nhập khẩu tổng hợp Vạn Xuân</span>
+                                </div>
+                                <div className="col col-4 dvtc">
+                                    <img src="https://vietnamdefence.vdi.org.vn/quantri/knd/quangcao/PublishingImages/QuangCao/AnhDaiDien/2024/05/eifec.png" className="img-fluid" alt=""/>
+                                    <span className="quangcao_title">Công ty TNHH EIFEC</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
-            </div>
-            <button
-                className="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev"
-            >
-                <span className="carousel-control-prev-icon bg-danger" aria-hidden="true"></span>
-                <span className="visually-hidden">Previous</span>
-            </button>
-            <button
-                className="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next"
-            >
-                <span className="carousel-control-next-icon bg-danger" aria-hidden="true"></span>
-                <span className="visually-hidden">Next</span>
-            </button>
-            </div>
-        </div>
+            </unit>
+        </>
     );
 };
 
 export default memo(HomePage);
+

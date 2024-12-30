@@ -1,7 +1,29 @@
-.body_homepage{
-    padding: 4rem;
-    background-color: #D6EFD8;
+.offices_list .item h3 {
+    font-size: 18px;
+    line-height: 31px;
+    // font-family: Inter-SemiBold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1A6E5F;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    /* margin-left: 15px; */
+    text-align: center;
 }
-img{
-    cursor: pointer;
+
+.offices_list .item:nth-child(1) {
+    width: 20.9%;
+}
+.offices_list .item {
+    margin-bottom: 57px;
+    /* padding: 0 12px; */
+    text-align: center;
+    display: inline-block;
+}
+
+.quangcao_title{
+    color: #1A6E5F;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.6rem;
 }
