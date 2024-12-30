@@ -2,7 +2,7 @@ import { memo } from "react";
 import { useNavigate } from "react-router-dom";
 import "./style.scss";
 
-export const HomePage = () => {
+export const News = () => {
     const navigate = useNavigate();
     return (
         <div className="container" style={{width: '75%'}}>
@@ -154,7 +154,7 @@ export const HomePage = () => {
     );
 };
 
-export default memo(HomePage);
+export default memo(News);
 
 
 // import { memo } from "react";

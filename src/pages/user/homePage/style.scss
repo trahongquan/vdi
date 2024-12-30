@@ -15,7 +15,7 @@
     width: 20.9%;
 }
 .offices_list .item {
-    margin-bottom: 57px;
+    // margin-bottom: 57px;
     /* padding: 0 12px; */
     text-align: center;
     display: inline-block;
@@ -26,4 +26,24 @@
     text-transform: uppercase;
     font-weight: bold;
     font-size: 0.6rem;
+}
+.dvtc{
+    width: 25%;
+    height: 10%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+.dvtc > span {
+    display: inline;
+}
+.dvtc > img {
+    border: 0;
+    max-width: 10rem;
+    // height: 5rem;
+}
+.dvtc-boder {
+    border-left: 1px solid #1A6E5F;
+    border-right: 1px solid #1A6E5F;
 }
