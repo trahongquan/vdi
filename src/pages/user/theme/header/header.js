@@ -127,7 +127,7 @@ export const Header = () => {
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link to={"/"} >
+                                <Link to={"/news"} >
                                     <span className="nav-link" >BÁO CHÍ</span>
                                 </Link>
                             </li>
