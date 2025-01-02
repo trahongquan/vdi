@@ -1,0 +1,36 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+.slick-arrow {
+    /* width: 150px; 
+    height: 150px;  */
+    background-color: transparent #ccc; /* Màu nền */
+    border-radius: 50%; /* Để làm tròn nút */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.css-dev-only-do-not-override-161f05s{
+    display: block;
+}
+.date-image{
+    position: relative;
+}
+.date {
+    position: absolute;
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-family: Inter-Regular;
+    top: 25%; /* Điều chỉnh vị trí theo nhu cầu */
+    left: 5%; /* Điều chỉnh vị trí theo nhu cầu */
+}
+.cont{
+    background-color: #023A51;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: justify
+}
+/* a:hover{
+    color: rgb(206, 0, 0);
+} */

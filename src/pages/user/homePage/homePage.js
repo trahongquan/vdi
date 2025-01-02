@@ -1,13 +1,18 @@
 import { memo } from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import "./style.scss";
-import { Divider } from "antd";
+import { Divider, Image } from "antd";
+import { SliderComponent } from "../theme/slider/slider";
+import logo1 from '../../../assent/logo192.png'
+import logo2 from '../../../assent/logo512.png'
 
 export const HomePage = () => {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
+
+	
     return (
         <>
-            <banner>
+            <div>
                 <div className="" style={{width: '100%'}}>
                     <div id="carouselExampleIndicators" className="carousel slide">
                         <div className="carousel-indicators">
@@ -36,8 +41,8 @@ export const HomePage = () => {
                         </button>
                         </div>
                 </div>
-            </banner>
-            <unit className="container">
+            </div>
+            <div className="container">
                 <div className="section_head text-center my-5">
                     <img src="https://vietnamdefence.vdi.org.vn/quantri/knd/quangcao/PublishingImages/DanhMucQuangCao/AnhDaiDien/2024/04/groupvietnamdefence.png" alt=""></img>
                 </div>
@@ -54,7 +59,7 @@ export const HomePage = () => {
                         <div className="col col-12">
                             <div className="row justify-content-around align-items-center dvtc-boder">
                                 <div className="col col-3 dvtc">
-                                        <img className="dvtc_img" src="https://vietnamdefence.vdi.org.vn/quantri/knd/quangcao/PublishingImages/QuangCao/AnhDaiDien/2024/05/untitled.png" className="img-fluid" alt=""/>
+                                        <img className="dvtc_img" src="https://vietnamdefence.vdi.org.vn/quantri/knd/quangcao/PublishingImages/QuangCao/AnhDaiDien/2024/05/untitled.png" alt=""/>
                                     <span className="quangcao_title">Bộ Tổng tham mưu</span>
                                 </div>
                                 <div className="col col-3 dvtc">
@@ -93,207 +98,22 @@ export const HomePage = () => {
                     </div>
                     
                 </div>
-            </unit>
+            </div>
             <div className="container">
                 <Divider style={{borderColor: '#434e4c', borderWidth: '0.15rem'}} />
             </div>
-            <div class="container">
-			<div class="section_head">
-				<h2 class="text-danger text-center fw-bold">Tin tức - sự kiện</h2>
+
+			<div className="container">
+				<SliderComponent arrImages={[
+					'https://vietnamdefence.vdi.org.vn/quantri/knd/tintucvn/PublishingImages/TinTuc/AnhDaiDien/2024/12/24.jpg', 
+					'https://vietnamdefence.vdi.org.vn/quantri/knd/tintucvn/PublishingImages/TinTuc/AnhDaiDien/2024/12/24.jpg',
+					'https://vietnamdefence.vdi.org.vn/quantri/knd/tintucvn/PublishingImages/TinTuc/AnhDaiDien/2024/12/24.jpg',
+					'https://vietnamdefence.vdi.org.vn/quantri/knd/tintucvn/PublishingImages/TinTuc/AnhDaiDien/2024/12/24.jpg',
+					// 'https://vietnamdefence.vdi.org.vn/quantri/knd/tintucvn/PublishingImages/TinTuc/AnhDaiDien/2024/12/24.jpg',
+					// 'https://vietnamdefence.vdi.org.vn/quantri/knd/tintucvn/PublishingImages/TinTuc/AnhDaiDien/2024/12/24.jpg',
+					// 'https://vietnamdefence.vdi.org.vn/quantri/knd/tintucvn/PublishingImages/TinTuc/AnhDaiDien/2024/12/24.jpg',
+					]} />
 			</div>
-			<div class="blog_slider owl-carousel ttsk owl-loaded owl-drag">
-			    <div class="owl-stage-outer"><div class="owl-stage" ><div class="owl-item cloned" ><div class="item">
-						<div class="content">
-							<div class="img">
-								<a href="/tin-tuc---su-kien-vie/khai-mac-trien-lam-quoc-phong-quoc-te-viet-nam-202-d34-t89.html">
-									<img src="/quantri/knd/tintucvn/PublishingImages/TinTuc/AnhDaiDien/2024/12/24.jpg" alt=""/>
-								</a>
-							</div>
-							<div class="cont">
-								<div class="imgDate">
-									<img src="/Publishing_Resources/BoQuocPhong/assets/images/industry-demo.png" alt=""/>
-									<p class="date">19/12/2024</p>
-								</div>
-								<h3><a href="/tin-tuc---su-kien-vie/khai-mac-trien-lam-quoc-phong-quoc-te-viet-nam-202-d34-t89.html">Khai mạc Triển lãm Quốc phòng quốc tế Việt Nam 2024</a></h3>
-								<div class="except">
-									Sáng 19-12, Bộ Quốc phòng Việt Nam long trọng tổ chức Lễ khai mạc Triển lãm Quốc phòng quốc tế Việt Nam 2024 tại khu vực sân bay Gia Lâm (Hà Nội). Dự khai mạc có đồng chí Phạm Minh Chính, Ủy viên Bộ Chính trị, Thủ tướng Chính phủ.
-								</div>
-							</div>
-							<a class="readmore_txt" href="/tin-tuc---su-kien-vie/khai-mac-trien-lam-quoc-phong-quoc-te-viet-nam-202-d34-t89.html">Xem thêm</a>
-						</div>
-					</div></div><div class="owl-item cloned" ><div class="item">
-						<div class="content">
-							<div class="img">
-								<a href="/tin-tuc---su-kien-vie/dam-bao-tot-an-ninh-an-toan-cho-trien-lam-quoc-pho-d34-t36.html">
-									<img src="/quantri/knd/tintucvn/PublishingImages/TinTuc/AnhDaiDien/2024/05/574_1.jpg" alt=""/>
-								</a>
-							</div>
-							<div class="cont">
-								<div class="imgDate">
-									<img src="/Publishing_Resources/BoQuocPhong/assets/images/industry-demo.png" alt=""/>
-									<p class="date">05/05/2024</p>
-								</div>
-								<h3><a href="/tin-tuc---su-kien-vie/dam-bao-tot-an-ninh-an-toan-cho-trien-lam-quoc-pho-d34-t36.html">Đảm bảo tốt an ninh, an toàn cho Triển lãm quốc phòng quốc tế Việt Nam 2024</a></h3>
-								<div class="except">
-									(ĐCSVN) - Thượng tướng Phùng Sĩ Tấn yêu cầu Tiểu ban điều hành - an ninh tiếp tục nghiên cứu, hoàn chỉnh các phương án tối ưu tổ chức hiệp đồng các lực lượng, tăng cường phối hợp, nỗ lực ở mức cao nhất, đảm bảo cho thành công của Triển lãm quốc phòng quốc tế Việt Nam 2024; góp phần lan tỏa hình ảnh đẹp của đất nước, Quân đội nhân dân Việt Nam.
-								</div>
-							</div>
-							<a class="readmore_txt" href="/tin-tuc---su-kien-vie/dam-bao-tot-an-ninh-an-toan-cho-trien-lam-quoc-pho-d34-t36.html">Xem thêm</a>
-						</div>
-					</div></div><div class="owl-item cloned" ><div class="item">
-						<div class="content">
-							<div class="img">
-								<a href="/tin-tuc---su-kien-vie/tap-huan-si-quan-lien-lac-phien-dich-phuc-vu-trien-d34-t35.html">
-									<img src="/quantri/knd/tintucvn/PublishingImages/TinTuc/AnhDaiDien/2024/05/1.jpg" alt=""/>
-								</a>
-							</div>
-							<div class="cont">
-								<div class="imgDate">
-									<img src="/Publishing_Resources/BoQuocPhong/assets/images/industry-demo.png" alt=""/>
-									<p class="date">03/05/2024</p>
-								</div>
-								<h3><a href="/tin-tuc---su-kien-vie/tap-huan-si-quan-lien-lac-phien-dich-phuc-vu-trien-d34-t35.html">Tập huấn sĩ quan liên lạc, phiên dịch phục vụ Triển lãm Quốc phòng quốc tế Việt Nam 2024</a></h3>
-								<div class="except">
-									Sáng 22-4, tại Hà Nội diễn ra Lễ khai mạc lớp tập huấn sĩ quan liên lạc và phiên dịch phục vụ Triển lãm Quốc phòng quốc tế Việt Nam 2024. Tham gia tập huấn có đông đủ các đồng chí được cử làm sĩ quan liên lạc, phiên dịch đến từ các cơ quan, đơn vị trực thuộc Bộ Quốc phòng và các học viện, nhà trường quân đội. Giảng viên là những cán bộ có kinh nghiệm đang công tác tại Tổng cục Công nghiệp Quốc phòng, Cục Bảo vệ an ninh quân đội (Tổng cục Chính trị Quân đội nhân dân Việt Nam) và Cục Đối ngoại/Bộ Quốc phòng.
-								</div>
-							</div>
-							<a class="readmore_txt" href="/tin-tuc---su-kien-vie/tap-huan-si-quan-lien-lac-phien-dich-phuc-vu-trien-d34-t35.html">Xem thêm</a>
-						</div>
-					</div></div><div class="owl-item active" ><div class="item">
-						<div class="content">
-							<div class="img">
-								<a href="/tin-tuc---su-kien-vie/thu-tuong-pham-minh-chinh-tham-quan-cac-gian-hang--d34-t90.html">
-									<img src="/quantri/knd/tintucvn/PublishingImages/TinTuc/AnhDaiDien/2024/12/2.1.jpg" alt=""/>
-								</a>
-							</div>
-							<div class="cont">
-								<div class="imgDate">
-									<img src="/Publishing_Resources/BoQuocPhong/assets/images/industry-demo.png" alt=""/>
-									<p class="date">19/12/2024</p>
-								</div>
-								<h3><a href="/tin-tuc---su-kien-vie/thu-tuong-pham-minh-chinh-tham-quan-cac-gian-hang--d34-t90.html">Thủ tướng Phạm Minh Chính tham quan các gian hàng của Triển lãm Quốc phòng quốc tế Việt Nam 2024</a></h3>
-								<div class="except">
-									Ngay sau khi tham dự và phát biểu tại lễ khai mạc Triển lãm Quốc phòng quốc tế Việt Nam 2024, Thủ tướng Phạm Minh Chính đã cùng các đại biểu tham quan các gian hàng trưng bày của triển lãm.
-								</div>
-							</div>
-							<a class="readmore_txt" href="/tin-tuc---su-kien-vie/thu-tuong-pham-minh-chinh-tham-quan-cac-gian-hang--d34-t90.html">Xem thêm</a>
-						</div>
-					</div></div><div class="owl-item active" ><div class="item">
-						<div class="content">
-							<div class="img">
-								<a href="/tin-tuc---su-kien-vie/khai-mac-trien-lam-quoc-phong-quoc-te-viet-nam-202-d34-t89.html">
-									<img src="/quantri/knd/tintucvn/PublishingImages/TinTuc/AnhDaiDien/2024/12/24.jpg" alt=""/>
-								</a>
-							</div>
-							<div class="cont">
-								<div class="imgDate">
-									<img src="/Publishing_Resources/BoQuocPhong/assets/images/industry-demo.png" alt=""/>
-									<p class="date">19/12/2024</p>
-								</div>
-								<h3><a href="/tin-tuc---su-kien-vie/khai-mac-trien-lam-quoc-phong-quoc-te-viet-nam-202-d34-t89.html">Khai mạc Triển lãm Quốc phòng quốc tế Việt Nam 2024</a></h3>
-								<div class="except">
-									Sáng 19-12, Bộ Quốc phòng Việt Nam long trọng tổ chức Lễ khai mạc Triển lãm Quốc phòng quốc tế Việt Nam 2024 tại khu vực sân bay Gia Lâm (Hà Nội). Dự khai mạc có đồng chí Phạm Minh Chính, Ủy viên Bộ Chính trị, Thủ tướng Chính phủ.
-								</div>
-							</div>
-							<a class="readmore_txt" href="/tin-tuc---su-kien-vie/khai-mac-trien-lam-quoc-phong-quoc-te-viet-nam-202-d34-t89.html">Xem thêm</a>
-						</div>
-					</div></div><div class="owl-item active"><div class="item">
-						<div class="content">
-							<div class="img">
-								<a href="/tin-tuc---su-kien-vie/dam-bao-tot-an-ninh-an-toan-cho-trien-lam-quoc-pho-d34-t36.html">
-									<img src="/quantri/knd/tintucvn/PublishingImages/TinTuc/AnhDaiDien/2024/05/574_1.jpg" alt=""/>
-								</a>
-							</div>
-							<div class="cont">
-								<div class="imgDate">
-									<img src="/Publishing_Resources/BoQuocPhong/assets/images/industry-demo.png" alt=""/>
-									<p class="date">05/05/2024</p>
-								</div>
-								<h3><a href="/tin-tuc---su-kien-vie/dam-bao-tot-an-ninh-an-toan-cho-trien-lam-quoc-pho-d34-t36.html">Đảm bảo tốt an ninh, an toàn cho Triển lãm quốc phòng quốc tế Việt Nam 2024</a></h3>
-								<div class="except">
-									(ĐCSVN) - Thượng tướng Phùng Sĩ Tấn yêu cầu Tiểu ban điều hành - an ninh tiếp tục nghiên cứu, hoàn chỉnh các phương án tối ưu tổ chức hiệp đồng các lực lượng, tăng cường phối hợp, nỗ lực ở mức cao nhất, đảm bảo cho thành công của Triển lãm quốc phòng quốc tế Việt Nam 2024; góp phần lan tỏa hình ảnh đẹp của đất nước, Quân đội nhân dân Việt Nam.
-								</div>
-							</div>
-							<a class="readmore_txt" href="/tin-tuc---su-kien-vie/dam-bao-tot-an-ninh-an-toan-cho-trien-lam-quoc-pho-d34-t36.html">Xem thêm</a>
-						</div>
-					</div></div><div class="owl-item" ><div class="item">
-						<div class="content">
-							<div class="img">
-								<a href="/tin-tuc---su-kien-vie/tap-huan-si-quan-lien-lac-phien-dich-phuc-vu-trien-d34-t35.html">
-									<img src="/quantri/knd/tintucvn/PublishingImages/TinTuc/AnhDaiDien/2024/05/1.jpg" alt=""/>
-								</a>
-							</div>
-							<div class="cont">
-								<div class="imgDate">
-									<img src="/Publishing_Resources/BoQuocPhong/assets/images/industry-demo.png" alt=""/>
-									<p class="date">03/05/2024</p>
-								</div>
-								<h3><a href="/tin-tuc---su-kien-vie/tap-huan-si-quan-lien-lac-phien-dich-phuc-vu-trien-d34-t35.html">Tập huấn sĩ quan liên lạc, phiên dịch phục vụ Triển lãm Quốc phòng quốc tế Việt Nam 2024</a></h3>
-								<div class="except">
-									Sáng 22-4, tại Hà Nội diễn ra Lễ khai mạc lớp tập huấn sĩ quan liên lạc và phiên dịch phục vụ Triển lãm Quốc phòng quốc tế Việt Nam 2024. Tham gia tập huấn có đông đủ các đồng chí được cử làm sĩ quan liên lạc, phiên dịch đến từ các cơ quan, đơn vị trực thuộc Bộ Quốc phòng và các học viện, nhà trường quân đội. Giảng viên là những cán bộ có kinh nghiệm đang công tác tại Tổng cục Công nghiệp Quốc phòng, Cục Bảo vệ an ninh quân đội (Tổng cục Chính trị Quân đội nhân dân Việt Nam) và Cục Đối ngoại/Bộ Quốc phòng.
-								</div>
-							</div>
-							<a class="readmore_txt" href="/tin-tuc---su-kien-vie/tap-huan-si-quan-lien-lac-phien-dich-phuc-vu-trien-d34-t35.html">Xem thêm</a>
-						</div>
-					</div></div><div class="owl-item cloned" ><div class="item">
-						<div class="content">
-							<div class="img">
-								<a href="/tin-tuc---su-kien-vie/thu-tuong-pham-minh-chinh-tham-quan-cac-gian-hang--d34-t90.html">
-									<img src="/quantri/knd/tintucvn/PublishingImages/TinTuc/AnhDaiDien/2024/12/2.1.jpg" alt=""/>
-								</a>
-							</div>
-							<div class="cont">
-								<div class="imgDate">
-									<img src="/Publishing_Resources/BoQuocPhong/assets/images/industry-demo.png" alt=""/>
-									<p class="date">19/12/2024</p>
-								</div>
-								<h3><a href="/tin-tuc---su-kien-vie/thu-tuong-pham-minh-chinh-tham-quan-cac-gian-hang--d34-t90.html">Thủ tướng Phạm Minh Chính tham quan các gian hàng của Triển lãm Quốc phòng quốc tế Việt Nam 2024</a></h3>
-								<div class="except">
-									Ngay sau khi tham dự và phát biểu tại lễ khai mạc Triển lãm Quốc phòng quốc tế Việt Nam 2024, Thủ tướng Phạm Minh Chính đã cùng các đại biểu tham quan các gian hàng trưng bày của triển lãm.
-								</div>
-							</div>
-							<a class="readmore_txt" href="/tin-tuc---su-kien-vie/thu-tuong-pham-minh-chinh-tham-quan-cac-gian-hang--d34-t90.html">Xem thêm</a>
-						</div>
-					</div></div><div class="owl-item cloned" ><div class="item">
-						<div class="content">
-							<div class="img">
-								<a href="/tin-tuc---su-kien-vie/khai-mac-trien-lam-quoc-phong-quoc-te-viet-nam-202-d34-t89.html">
-									<img src="/quantri/knd/tintucvn/PublishingImages/TinTuc/AnhDaiDien/2024/12/24.jpg" alt=""/>
-								</a>
-							</div>
-							<div class="cont">
-								<div class="imgDate">
-									<img src="/Publishing_Resources/BoQuocPhong/assets/images/industry-demo.png" alt=""/>
-									<p class="date">19/12/2024</p>
-								</div>
-								<h3><a href="/tin-tuc---su-kien-vie/khai-mac-trien-lam-quoc-phong-quoc-te-viet-nam-202-d34-t89.html">Khai mạc Triển lãm Quốc phòng quốc tế Việt Nam 2024</a></h3>
-								<div class="except">
-									Sáng 19-12, Bộ Quốc phòng Việt Nam long trọng tổ chức Lễ khai mạc Triển lãm Quốc phòng quốc tế Việt Nam 2024 tại khu vực sân bay Gia Lâm (Hà Nội). Dự khai mạc có đồng chí Phạm Minh Chính, Ủy viên Bộ Chính trị, Thủ tướng Chính phủ.
-								</div>
-							</div>
-							<a class="readmore_txt" href="/tin-tuc---su-kien-vie/khai-mac-trien-lam-quoc-phong-quoc-te-viet-nam-202-d34-t89.html">Xem thêm</a>
-						</div>
-					</div></div><div class="owl-item cloned" ><div class="item">
-						<div class="content">
-							<div class="img">
-								<a href="/tin-tuc---su-kien-vie/dam-bao-tot-an-ninh-an-toan-cho-trien-lam-quoc-pho-d34-t36.html">
-									<img src="/quantri/knd/tintucvn/PublishingImages/TinTuc/AnhDaiDien/2024/05/574_1.jpg" alt=""/>
-								</a>
-							</div>
-							<div class="cont">
-								<div class="imgDate">
-									<img src="/Publishing_Resources/BoQuocPhong/assets/images/industry-demo.png" />
-									<p class="date">05/05/2024</p>
-								</div>
-								<h3><a href="/tin-tuc---su-kien-vie/dam-bao-tot-an-ninh-an-toan-cho-trien-lam-quoc-pho-d34-t36.html">Đảm bảo tốt an ninh, an toàn cho Triển lãm quốc phòng quốc tế Việt Nam 2024</a></h3>
-								<div class="except">
-									(ĐCSVN) - Thượng tướng Phùng Sĩ Tấn yêu cầu Tiểu ban điều hành - an ninh tiếp tục nghiên cứu, hoàn chỉnh các phương án tối ưu tổ chức hiệp đồng các lực lượng, tăng cường phối hợp, nỗ lực ở mức cao nhất, đảm bảo cho thành công của Triển lãm quốc phòng quốc tế Việt Nam 2024; góp phần lan tỏa hình ảnh đẹp của đất nước, Quân đội nhân dân Việt Nam.
-								</div>
-							</div>
-							<a class="readmore_txt" href="/tin-tuc---su-kien-vie/dam-bao-tot-an-ninh-an-toan-cho-trien-lam-quoc-pho-d34-t36.html">Xem thêm</a>
-						</div>
-					</div></div></div></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><i class="ic ic_left_vector"></i></button><button type="button" role="presentation" class="owl-next"><i class="ic ic_right_vector"></i></button></div><div class="owl-dots disabled"></div></div>
-		</div>
         </>
     );
 };

@@ -40,7 +40,7 @@ ul.topnav li {float: left;}
 
 ul.topnav li a {
     display: block;
-    text-align: center;
+    // text-align: center;
     text-decoration: none;
     span {
         color:white;
@@ -79,10 +79,7 @@ ul.topnav li {float: none;}
     padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 999;
-    top: 90%; /* Hiển thị menu phía dưới menu item*/
-    left: 28%; /* Canh trái với menu item*/
     display: block; /* Ban đầu ẩn menu*/
-    // width: 20rem; /* Độ rộng của menu */
 }
 
 .hovered-menu ul {
@@ -93,7 +90,7 @@ ul.topnav li {float: none;}
     flex-direction: column;
 }
 
-.hovered-menu li {
+.hovered-menu li a{
     padding: 5px 0;
     border-bottom: 2px solid #808285;
     padding-top: 1rem;
